@@ -21,6 +21,7 @@ TestSvc fetches currency rates from the NBU (National Bank of Ukraine) API and s
 - [Execution modes and options](#execution-modes-and-options)
 - [Configuration](#configuration)
 - [Uninstallation](#uninstallation)
+- [Troubleshooting_tips_and_issues](#troubleshooting-tips-and-isuues)
 - [Logging](#logging)
 - [License](#license)
 - [Contact](#contact)
@@ -224,6 +225,18 @@ extension = json
 - **Error Handling:** If the custom config file contains unexpected parameters, the application will try to read and save the allowed values of options, then rewrite your config file to update incorrect values with the current ones.
 - **File Deletion:** If you delete the custom config file, the service will switch to the default one, if it exists, and use the saved options. If there is no default config file, it will create one and update it with the current configuration from memory. If you delete the default config file, the service will forget about your custom file and create a new default one.
 
+### About allowed values:
+- **fetch_rate** - integers starting from 1 (one time per date) up to 2480 (two times per minute)
+- **currencies**: one or several currencies codes with the comma-separator: AUD, CAD, CNY, HRK, CZK, DKK, HKD, HUF, INR, IDR, ILS, JPY, KZT, KRW, MXN, MDL, NZD, NOK, SAR, SGD, ZAR, SEK, CHF, EGP, GBP, USD, BYN, RON, TRY, XDR, BGN, EUR, PLN, DZD, BDT, AMD, IRR, IQD, KGS, LBP, LYD, MYR, MAD, PKR, VND, THB, AED, TND, UZS, TMT, RSD, AZN, TJS, GEL, BRL, XAU, XAG, XPT, XPD.
+- **request_parameters**: one or several of: exchangedate, r030, cc, txt, enname, rate, units, rate_per_unit, group, calcdate with comma as separator.
+- **configuration_file**: this parameter should not be modified both at the custom or default config file, but allowed values:
+  - existing ".ini" file with full name like `"C:\\TestDir\\config.ini"` with double quotes to ensure all spaces will correctly threated and double splashes to ensure it can be parsed correctly
+  - `default` - with qutoes to specify default config location.
+- **save_path**: any existing path or `default` to specify the default path.
+- **save_mode**: `different_files` or `single_file`
+- **save_file**: any existing propper-formated file, corresponding to extension in `"C:\\TestDir\\save\\output.json"` format: using double quotes and double slahes.
+- **extension**: `json`, `xml` or `csv`
+
 ## Uninstallation
 
 Uninstallation pocedure is easy to perform using console:
@@ -234,6 +247,20 @@ or if you want to save the TestSvc directory in Program Files (x86), you must ad
 ```console
 TestScvApp.exe -u --save_svc_dir
 ```
+## Troubleshooting tips and issues
+
+If service should work, but you don't see any effects of it, you:
+- First of all, you need to check, whether servise working or not: `Win+R` + `services.msc`, find `TestSvc` there and check it's status. If it isn't running, probably you need to start whether using `--control --start` or start the service from `services.msc`.
+- If it is working, but still nothing, you need to check yout internet connection.
+- If it is fine, but still nothing, you may specify work mode, file or path to save and fetchrate see [Usage](#usage) and  [Execution modes and options](#execution-modes-and-options) sections.
+- If still doesn't work you can see the save path, mode and other things in the config.ini in \ProgramFiles (x86)\TestSvc and check, which functions are incorrect (see the [Configuration](#configuration) section).
+
+If you change your specified config file, but it do not affect on execusion, you need to ensure in it's correctness and tell about its existence to the program using `--control -c "Your\\Config\\File\\Path.ini" (check the [Execution modes and options](#execution-modes-and-options) and [Configuration](#configuration) for detailed information). Optionally you can check the default config file in \ProgramFiles (x86)\TestSvc to check, whether it points on your file or not.
+If any other problems, you can check the Windows Event Viewer if logger wasn't initialized or log files (check [Logging](#logging)) for details.
+
+**WARNING** Ensure that you isntalling, deinstalling or controling service using administator permisions and command line interface (cmd).
+**WARNING** You need to set the whole path to your file.
+
 
 ## Logging
 
