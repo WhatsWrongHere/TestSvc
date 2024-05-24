@@ -21,7 +21,7 @@ TestSvc fetches currency rates from the NBU (National Bank of Ukraine) API and s
 - [Execution modes and options](#execution-modes-and-options)
 - [Configuration](#configuration)
 - [Uninstallation](#uninstallation)
-- [Troubleshooting_tips_and_issues](#troubleshooting-tips-and-isuues)
+- [Troubleshooting tips and issues](#troubleshooting-tips-and-isuues)
 - [Logging](#logging)
 - [License](#license)
 - [Contact](#contact)
