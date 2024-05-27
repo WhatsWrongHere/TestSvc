@@ -1,0 +1,204 @@
+[2024-05-27 13:13:27.019] [main] [trace] Start logging, main entry
+[2024-05-27 13:13:27.022] [main] [trace] SetFromConsole entry with: 
+[2024-05-27 13:13:27.022] [main] [info] TestServiceApp.exe
+[2024-05-27 13:13:27.022] [main] [info] -u
+[2024-05-27 13:13:27.023] [main] [trace] PC::SetFromConsole exiting
+[2024-05-27 13:13:27.023] [main] [trace] IsServiceInstalled entry
+[2024-05-27 13:13:27.024] [main] [trace] IsServiceInstalled returning
+[2024-05-27 13:13:27.024] [main] [trace] Starting uninstallation
+[2024-05-27 13:13:27.026] [main] [info] doDeleteSvcFolder = 1
+[2024-05-27 13:13:27.026] [main] [trace] Entered the GetServiceFolder
+[2024-05-27 13:13:27.030] [main] [info] Target service folder: C:\Program Files (x86)\TestSvc
+[2024-05-27 13:13:27.030] [main] [trace] Succeded in folder getting or creation, returning
+[2024-05-27 13:13:27.030] [main] [trace] Entry the DeleteDirectory
+[2024-05-27 13:13:27.032] [main] [trace] Service directory successfully deleted!
+[2024-05-27 13:13:27.032] [main] [trace] Uninstallation is successful, exiting SvcUninstall
+[2024-05-27 13:13:27.032] [main] [info] Service uninstalled successfully
+[2024-05-27 13:13:27.032] [main] [trace] main ends
+[2024-05-27 13:14:18.103] [main] [trace] Start logging, main entry
+[2024-05-27 13:14:18.105] [main] [trace] SetFromConsole entry with: 
+[2024-05-27 13:14:18.105] [main] [info] TestServiceApp.exe
+[2024-05-27 13:14:18.105] [main] [info] -h
+[2024-05-27 13:14:18.107] [main] [trace] Help was requested
+[2024-05-27 13:14:18.108] [main] [trace] main ends
+[2024-05-27 13:14:45.596] [main] [trace] Start logging, main entry
+[2024-05-27 13:14:45.598] [main] [trace] SetFromConsole entry with: 
+[2024-05-27 13:14:45.598] [main] [info] TestServiceApp.exe
+[2024-05-27 13:14:45.598] [main] [info] -i
+[2024-05-27 13:14:45.598] [main] [info] --start
+[2024-05-27 13:14:45.599] [main] [trace] PC::SetFromConsole exiting
+[2024-05-27 13:14:45.599] [main] [trace] IsServiceInstalled entry
+[2024-05-27 13:14:45.600] [main] [info] There is no such service, failed to OpenService when doing IsServiceInstalled check
+[2024-05-27 13:14:45.600] [main] [trace] Starting installation
+[2024-05-27 13:14:45.600] [main] [trace] trying to create configuration file(s)
+[2024-05-27 13:14:45.600] [main] [trace] Set configuration entry with m_configFilePath: 
+[2024-05-27 13:14:45.600] [main] [info] default
+[2024-05-27 13:14:45.600] [main] [trace] SaveToDefaultConfigFile entry
+[2024-05-27 13:14:45.600] [main] [trace] Entered the GetServiceFolder
+[2024-05-27 13:14:45.603] [main] [info] Target service folder: C:\Program Files (x86)\TestSvc
+[2024-05-27 13:14:45.603] [main] [trace] Succeded in folder getting or creation, returning
+[2024-05-27 13:14:45.603] [main] [trace] trying to create or open the default config file: 
+[2024-05-27 13:14:45.603] [main] [info] C:\Program Files (x86)\TestSvc\config.ini
+[2024-05-27 13:14:45.603] [main] [trace] Config file written successfully, exiting
+[2024-05-27 13:14:45.603] [main] [trace] created successfully
+[2024-05-27 13:14:45.603] [main] [info] Path to the main app: "C:\TestServiceApp\Release\TestServiceApp.exe"
+[2024-05-27 13:14:45.605] [main] [trace] StartSvc entry
+[2024-05-27 13:14:45.624] [main] [trace] Service started succesfully, ending
+[2024-05-27 13:14:45.624] [main] [trace] SvcInstall exiting
+[2024-05-27 13:14:45.624] [main] [info] Service installed successfully
+[2024-05-27 13:14:45.624] [main] [trace] main ends
+[2024-05-27 13:17:42.121] [main] [trace] Start logging, main entry
+[2024-05-27 13:17:42.123] [main] [trace] SetFromConsole entry with: 
+[2024-05-27 13:17:42.123] [main] [info] TestServiceApp.exe
+[2024-05-27 13:17:42.123] [main] [info] -i
+[2024-05-27 13:17:42.123] [main] [info] -e
+[2024-05-27 13:17:42.123] [main] [info] csv
+[2024-05-27 13:17:42.123] [main] [info] -p
+[2024-05-27 13:17:42.123] [main] [info] enname
+[2024-05-27 13:17:42.123] [main] [info] rate
+[2024-05-27 13:17:42.123] [main] [info] units
+[2024-05-27 13:17:42.123] [main] [info] -s
+[2024-05-27 13:17:42.123] [main] [info] C:\TestDir
+[2024-05-27 13:17:42.124] [main] [trace] PC::SetFromConsole exiting
+[2024-05-27 13:17:42.124] [main] [trace] IsServiceInstalled entry
+[2024-05-27 13:17:42.124] [main] [trace] IsServiceInstalled returning
+[2024-05-27 13:17:42.125] [main] [info] service is already installed
+[2024-05-27 13:17:42.125] [main] [trace] main ends
+[2024-05-27 13:17:51.343] [main] [trace] Start logging, main entry
+[2024-05-27 13:17:51.345] [main] [trace] SetFromConsole entry with: 
+[2024-05-27 13:17:51.345] [main] [info] TestServiceApp.exe
+[2024-05-27 13:17:51.345] [main] [info] --control
+[2024-05-27 13:17:51.345] [main] [info] -e
+[2024-05-27 13:17:51.345] [main] [info] csv
+[2024-05-27 13:17:51.345] [main] [info] -p
+[2024-05-27 13:17:51.345] [main] [info] enname
+[2024-05-27 13:17:51.345] [main] [info] rate
+[2024-05-27 13:17:51.345] [main] [info] units
+[2024-05-27 13:17:51.345] [main] [info] -s
+[2024-05-27 13:17:51.345] [main] [info] C:\TestDir
+[2024-05-27 13:17:51.345] [main] [trace] PC::SetFromConsole exiting
+[2024-05-27 13:17:51.345] [main] [trace] IsServiceInstalled entry
+[2024-05-27 13:17:51.346] [main] [trace] IsServiceInstalled returning
+[2024-05-27 13:17:51.346] [main] [trace] SvcControl entry
+[2024-05-27 13:17:51.346] [main] [trace] moving setted configuration from console to temp vars
+[2024-05-27 13:17:51.346] [main] [trace] stopping the service
+[2024-05-27 13:17:51.347] [main] [trace] Stopping funtion entry
+[2024-05-27 13:17:51.347] [main] [trace] Service sucessfully stopped
+[2024-05-27 13:17:51.347] [main] [trace] validating configuraton
+[2024-05-27 13:17:51.347] [main] [trace] VaidateConfigurationFile Entry
+[2024-05-27 13:17:51.347] [main] [trace] Entered the GetServiceFolder
+[2024-05-27 13:17:51.350] [main] [info] Target service folder: C:\Program Files (x86)\TestSvc
+[2024-05-27 13:17:51.350] [main] [trace] Succeded in folder getting or creation, returning
+[2024-05-27 13:17:51.350] [main] [trace] Entered the GetServiceFolder
+[2024-05-27 13:17:51.350] [main] [info] Target service folder: C:\Program Files (x86)\TestSvc
+[2024-05-27 13:17:51.350] [main] [trace] Succeded in folder getting or creation, returning
+[2024-05-27 13:17:51.350] [main] [trace] trying to check the defaut configuration file: 
+[2024-05-27 13:17:51.350] [main] [info] C:\Program Files (x86)\TestSvc\config.ini
+[2024-05-27 13:17:51.352] [main] [trace] trying to find the custom config file path
+[2024-05-27 13:17:51.352] [main] [info] default
+[2024-05-27 13:17:51.352] [main] [trace] ConfigurationFile is propper
+[2024-05-27 13:17:51.352] [main] [trace] setting from configuration to memory
+[2024-05-27 13:17:51.352] [main] [trace] Set from configuration entry
+[2024-05-27 13:17:51.352] [main] [trace] Entered the GetServiceFolder
+[2024-05-27 13:17:51.352] [main] [info] Target service folder: C:\Program Files (x86)\TestSvc
+[2024-05-27 13:17:51.352] [main] [trace] Succeded in folder getting or creation, returning
+[2024-05-27 13:17:51.352] [main] [trace] trying to check the defaut configuration file: 
+[2024-05-27 13:17:51.352] [main] [info] C:\Program Files (x86)\TestSvc\config.ini
+[2024-05-27 13:17:51.352] [main] [trace] trying to find the custom config file path:
+[2024-05-27 13:17:51.352] [main] [trace] default
+[2024-05-27 13:17:51.352] [main] [trace] set from config items entry
+[2024-05-27 13:17:51.352] [main] [info] fetch_rate can be setted from config:
+[2024-05-27 13:17:51.352] [main] [info] 1440
+[2024-05-27 13:17:51.352] [main] [info] currencies can be setted from config:
+[2024-05-27 13:17:51.352] [main] [info] EUR
+[2024-05-27 13:17:51.352] [main] [info] USD
+[2024-05-27 13:17:51.352] [main] [info] request_parameters can be setted from config:
+[2024-05-27 13:17:51.352] [main] [info] exchangedate
+[2024-05-27 13:17:51.352] [main] [info] cc
+[2024-05-27 13:17:51.352] [main] [info] rate
+[2024-05-27 13:17:51.353] [main] [info] save mode can be setted from config:
+[2024-05-27 13:17:51.353] [main] [info] different_files
+[2024-05-27 13:17:51.353] [main] [info] extension can be setted from config:
+[2024-05-27 13:17:51.353] [main] [info] json
+[2024-05-27 13:17:51.353] [main] [info] save file can be setted from config:
+[2024-05-27 13:17:51.353] [main] [info] none
+[2024-05-27 13:17:51.353] [main] [trace] setting console entered options to the memory
+[2024-05-27 13:17:51.353] [main] [trace] Set configuration entry with m_configFilePath: 
+[2024-05-27 13:17:51.353] [main] [info] default
+[2024-05-27 13:17:51.353] [main] [trace] SaveToDefaultConfigFile entry
+[2024-05-27 13:17:51.353] [main] [trace] Entered the GetServiceFolder
+[2024-05-27 13:17:51.353] [main] [info] Target service folder: C:\Program Files (x86)\TestSvc
+[2024-05-27 13:17:51.353] [main] [trace] Succeded in folder getting or creation, returning
+[2024-05-27 13:17:51.353] [main] [trace] trying to create or open the default config file: 
+[2024-05-27 13:17:51.353] [main] [info] C:\Program Files (x86)\TestSvc\config.ini
+[2024-05-27 13:17:51.354] [main] [trace] Config file written successfully, exiting
+[2024-05-27 13:17:51.354] [main] [trace] StartSvc entry
+[2024-05-27 13:17:51.369] [main] [trace] Service started succesfully, ending
+[2024-05-27 13:17:51.370] [main] [trace] main ends
+[2024-05-27 13:18:27.862] [main] [trace] Start logging, main entry
+[2024-05-27 13:18:27.864] [main] [trace] SetFromConsole entry with: 
+[2024-05-27 13:18:27.864] [main] [info] TestServiceApp.exe
+[2024-05-27 13:18:27.864] [main] [info] --control
+[2024-05-27 13:18:27.864] [main] [info] -r
+[2024-05-27 13:18:27.864] [main] [info] 2480
+[2024-05-27 13:18:27.864] [main] [trace] PC::SetFromConsole exiting
+[2024-05-27 13:18:27.864] [main] [trace] IsServiceInstalled entry
+[2024-05-27 13:18:27.865] [main] [trace] IsServiceInstalled returning
+[2024-05-27 13:18:27.865] [main] [trace] SvcControl entry
+[2024-05-27 13:18:27.865] [main] [trace] moving setted configuration from console to temp vars
+[2024-05-27 13:18:27.865] [main] [trace] stopping the service
+[2024-05-27 13:18:27.865] [main] [trace] Stopping funtion entry
+[2024-05-27 13:18:27.866] [main] [trace] Service sucessfully stopped
+[2024-05-27 13:18:27.866] [main] [trace] validating configuraton
+[2024-05-27 13:18:27.866] [main] [trace] VaidateConfigurationFile Entry
+[2024-05-27 13:18:27.866] [main] [trace] Entered the GetServiceFolder
+[2024-05-27 13:18:27.869] [main] [info] Target service folder: C:\Program Files (x86)\TestSvc
+[2024-05-27 13:18:27.870] [main] [trace] Succeded in folder getting or creation, returning
+[2024-05-27 13:18:27.870] [main] [trace] Entered the GetServiceFolder
+[2024-05-27 13:18:27.870] [main] [info] Target service folder: C:\Program Files (x86)\TestSvc
+[2024-05-27 13:18:27.870] [main] [trace] Succeded in folder getting or creation, returning
+[2024-05-27 13:18:27.870] [main] [trace] trying to check the defaut configuration file: 
+[2024-05-27 13:18:27.870] [main] [info] C:\Program Files (x86)\TestSvc\config.ini
+[2024-05-27 13:18:27.878] [main] [trace] trying to find the custom config file path
+[2024-05-27 13:18:27.878] [main] [info] default
+[2024-05-27 13:18:27.879] [main] [trace] ConfigurationFile is propper
+[2024-05-27 13:18:27.879] [main] [trace] setting from configuration to memory
+[2024-05-27 13:18:27.879] [main] [trace] Set from configuration entry
+[2024-05-27 13:18:27.879] [main] [trace] Entered the GetServiceFolder
+[2024-05-27 13:18:27.879] [main] [info] Target service folder: C:\Program Files (x86)\TestSvc
+[2024-05-27 13:18:27.879] [main] [trace] Succeded in folder getting or creation, returning
+[2024-05-27 13:18:27.879] [main] [trace] trying to check the defaut configuration file: 
+[2024-05-27 13:18:27.879] [main] [info] C:\Program Files (x86)\TestSvc\config.ini
+[2024-05-27 13:18:27.879] [main] [trace] trying to find the custom config file path:
+[2024-05-27 13:18:27.879] [main] [trace] default
+[2024-05-27 13:18:27.879] [main] [trace] set from config items entry
+[2024-05-27 13:18:27.879] [main] [info] fetch_rate can be setted from config:
+[2024-05-27 13:18:27.879] [main] [info] 1440
+[2024-05-27 13:18:27.879] [main] [info] currencies can be setted from config:
+[2024-05-27 13:18:27.879] [main] [info] EUR
+[2024-05-27 13:18:27.879] [main] [info] USD
+[2024-05-27 13:18:27.879] [main] [info] request_parameters can be setted from config:
+[2024-05-27 13:18:27.879] [main] [info] enname
+[2024-05-27 13:18:27.879] [main] [info] rate
+[2024-05-27 13:18:27.879] [main] [info] units
+[2024-05-27 13:18:27.879] [main] [info] save_path can be setted from config:
+[2024-05-27 13:18:27.879] [main] [info] C:\TestDir
+[2024-05-27 13:18:27.879] [main] [info] save mode can be setted from config:
+[2024-05-27 13:18:27.879] [main] [info] different_files
+[2024-05-27 13:18:27.879] [main] [info] extension can be setted from config:
+[2024-05-27 13:18:27.879] [main] [info] csv
+[2024-05-27 13:18:27.879] [main] [info] save file can be setted from config:
+[2024-05-27 13:18:27.879] [main] [info] none
+[2024-05-27 13:18:27.879] [main] [trace] setting console entered options to the memory
+[2024-05-27 13:18:27.879] [main] [trace] Set configuration entry with m_configFilePath: 
+[2024-05-27 13:18:27.879] [main] [info] default
+[2024-05-27 13:18:27.879] [main] [trace] SaveToDefaultConfigFile entry
+[2024-05-27 13:18:27.879] [main] [trace] Entered the GetServiceFolder
+[2024-05-27 13:18:27.879] [main] [info] Target service folder: C:\Program Files (x86)\TestSvc
+[2024-05-27 13:18:27.879] [main] [trace] Succeded in folder getting or creation, returning
+[2024-05-27 13:18:27.879] [main] [trace] trying to create or open the default config file: 
+[2024-05-27 13:18:27.879] [main] [info] C:\Program Files (x86)\TestSvc\config.ini
+[2024-05-27 13:18:27.880] [main] [trace] Config file written successfully, exiting
+[2024-05-27 13:18:27.880] [main] [trace] StartSvc entry
+[2024-05-27 13:18:27.894] [main] [trace] Service started succesfully, ending
+[2024-05-27 13:18:27.895] [main] [trace] main ends
